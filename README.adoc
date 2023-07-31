@@ -1,0 +1,7 @@
+= GenomePhone VarScan Worker
+
+> **"Ring Ring Ring Ring, GenomePhone!"**
+
+GenomePhone is a framework for destributed variant calling.
+
+This project houses an implementation of a GenomePhone worker that uses the [VarScan](http://varscan.sourceforge.net/) variant caller.
