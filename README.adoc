@@ -1,12 +1,14 @@
 = GenomePhone VarScan Worker
 
+image::https://github.com/GenomePhone/genomephone-worker-varscan/actions//workflows/build.yml/badge.svg[align="center"]
+[.text-center]
 image:https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge["License: MIT", link="https://opensource.org/licenses/MIT"]
 image:https://img.shields.io/badge/Kotlin-555555?style=for-the-badge&logo=kotlin["Kotlin 1.9", link: "https://kotlinlang.org/"]
 image:https://img.shields.io/badge/kubernetes-336EE5?style=for-the-badge&logo=kubernetes&logoColor=white["Kubernetes", link:https://kubernetes.io]
 image:https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka["Apache Kafka", link:https://kafka.apache.org/]
 image:https://img.shields.io/badge/EdgeDB-5DC797?style=for-the-badge["EdgeDB", link:https://kafka.apache.org/]
 
-"Ring ring ring ring, GenomePhone"
+> **"Ring ring ring ring, GenomePhone"**
 
 == Introduction
 
