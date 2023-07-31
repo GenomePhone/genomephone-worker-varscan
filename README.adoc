@@ -1,7 +1,53 @@
 = GenomePhone VarScan Worker
 
-> **"Ring Ring Ring Ring, GenomePhone!"**
+image:https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge["License: MIT", link="https://opensource.org/licenses/MIT"]
+image:https://img.shields.io/badge/Kotlin-555555?style=for-the-badge&logo=kotlin["Kotlin 1.9", link: "https://kotlinlang.org/"]
+image:https://img.shields.io/badge/kubernetes-336EE5?style=for-the-badge&logo=kubernetes&logoColor=white["Kubernetes", link:https://kubernetes.io]
+image:https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka["Apache Kafka", link:https://kafka.apache.org/]
+image:https://img.shields.io/badge/EdgeDB-5DC797?style=for-the-badge["EdgeDB", link:https://kafka.apache.org/]
 
-GenomePhone is a framework for distributed variant calling.
+"Ring ring ring ring, GenomePhone"
 
-This project houses an implementation of a GenomePhone worker that uses the [VarScan](http://varscan.sourceforge.net/) variant caller.
+== Introduction
+
+Variant calling is a process in bioinformatics that identifies differences in a genomic sequence compared to a reference sequence. These differences, or variants, can include single nucleotide polymorphisms (SNPs), insertions, deletions, and others. Variant calling plays a crucial role in understanding the genetic basis of diseases, among other applications.
+
+GenomePhone is a framework for distributed variant calling. This repository, `genomephone-worker-varscan`, is an implementation of a GenomePhone worker that uses the link:http://varscan.sourceforge.net/[VarScan] variant caller. It is written in Kotlin.
+
+The `genomephone-worker-varscan` is responsible for processing chunks of genomic data using the VarScan variant caller. It receives messages from a Kafka topic, each containing the ID of a chunk to process. It then retrieves the chunk from a database, processes it using VarScan, and stores the results back in the database.
+
+== Getting Started
+
+To get started with `genomephone-worker-varscan`, you'll need to have Kotlin 1.9 installed on your machine. Once Kotlin is installed, you can clone this repository and build the project.
+
+=== Clone the Repository
+
+[source, bash]
+----
+git clone https://github.com/GenomePhone/genomephone-worker-varscan.git
+cd genomephone-worker-varscan
+----
+
+=== Build the Project
+
+[source, bash]
+----
+./gradlew build
+----
+
+== Usage
+
+After building the project, you can run the application.
+
+[source, bash]
+----
+./gradlew run
+----
+
+== Contributing
+
+We welcome contributions to `genomephone-worker-varscan`! If you have a feature request, bug report, or proposal, please open an issue on this GitHub repository.
+
+== License
+
+`genomephone-worker-varscan` is licensed under the MIT License. See the `LICENSE` file for more details.
